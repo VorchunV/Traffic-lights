@@ -30,17 +30,17 @@ class ViewController: UIViewController {
     @IBAction func startButtonPressed() {
         pressed += 1
         startButton.setTitle("NEXT", for: .normal)
+        
         switch pressed {
         case 1:
             redView.alpha = 1
+            greenView.alpha = 0.3
         case 2:
             redView.alpha = 0.3
             yellowView.alpha = 1
         case 3:
             yellowView.alpha = 0.3
             greenView.alpha = 1
-        case 4:
-            greenView.alpha = 0.3
         default:
             pressed = 0
         }
